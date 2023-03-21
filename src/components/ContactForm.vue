@@ -1,8 +1,8 @@
 <template>
-  <form @submit="submitContact" :validation-schema="ContactFormSchema">
+  <Form @submit="submitContact" :validation-schema="ContactFormSchema">
     <div class="form-group">
       <label for="name">Tên</label>
-      <field
+      <Field
         name="name"
         type="text"
         class="form-control"
@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
       <label for="email">E-mail</label>
-      <field
+      <Field
         name="email"
         type="text"
         class="form-control"
@@ -22,7 +22,7 @@
     </div>
     <div class="form-group">
       <label for="address">Địa chỉ</label>
-      <field
+      <Field
         name="address"
         type="text"
         class="form-control"
@@ -32,7 +32,7 @@
     </div>
     <div class="form-group">
       <label for="phone">Điện thoại</label>
-      <field
+      <Field
         name="phone"
         type="tel"
         class="form-control"
@@ -62,7 +62,7 @@
         Xoá
       </button>
     </div>
-  </form>
+  </Form>
 </template>
 
 <script>
